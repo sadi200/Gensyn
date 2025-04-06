@@ -11,7 +11,7 @@ echo "Allowing port 3000 through UFW..."
 sudo ufw allow 3000/tcp
 
 echo "Enabling UFW..."
-sudo ufw --force enable
+sudo ufw enable
 
 echo "Downloading Cloudflared..."
 wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
